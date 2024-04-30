@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" crossorigin="anonymous"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" >
+</head>
+<body>
+    <h2>¡Añade una película!</h2>
+    <form action=""  method="POST">
+        <div class="form-group row">
+            <label for="">Id</label>
+            <input type="text" id="id" name="id" value="{{pelicula.id}}">
+        </div>
+        <div class="form-group row">
+            <label for="">Nombre</label>
+            <input type="text" id="name" name="name" value="{{pelicula.name}}">
+        </div>
+        <div class="form-group row">
+            <label for="">Año</label>
+            <input type="text" id="year" name="year" value="{{pelicula.year}}">
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar</button>
+        <a class="btn btn-primary" href="/">Cancelar</a>
+    </form>
+
+
+    <script crossorigin="anonymous"
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" >
+	</script>
+</body>
+</html>
